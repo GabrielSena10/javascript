@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+	  
+	  <title>Condições aninhadas em Javascript</title>
+	  
+	  <style>
+	  	body{
+	  		font-family: Arial, Verdana, Sans-Serif;
+	  		font-size: 14pt;
+	  	}
+	  	input{
+	  		font-size: 14pt;
+	  		width: 100px;
+	  	}
+	  </style>
+	</head>
+	<body>
+		<h1>Vota ou não</h1>
+		<p>
+			<label for="ididade">Qual a sua idade? </label>
+			<input type="number" name="idade" id="ididade" placeholder="Idade">
+		</p>
+		<p>
+			<input type="button" value="Verificar" onclick="verificar()">
+		</p>
+		<div>
+			<p>Resposta</p>
+		</div>
+		<script>
+			function verificar(){
+				var idade = document.querySelector('input[type = number]').value
+				var numidade = Number(idade)
+				var res = document.querySelector('div')
+				if (numidade == ''){
+					res.innerHTML = '<p>Você não digitou sua idade!</p>'
+				}else{
+					res.innerHTML = `<p>Você tem ${numidade} anos!</p>`
+					if (numidade < 16){
+						res.innerHTML += '<p>Não vota!</p>'
+					}
+					else if (numidade < 18 || numidade >= 65){
+						res.innerHTML += '<p>Voto opcional!</p>'
+					}
+					else{
+						res.innerHTML += '<p>Voto obrigatório!</p>'
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

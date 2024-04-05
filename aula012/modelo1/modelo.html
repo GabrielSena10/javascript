@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+	  
+	  <title>Verificador de Idade</title>
+	  
+	  <link rel="stylesheet" href="estilos/estilo.css">
+	</head>
+	<body >
+		<head>
+			<h1>Verificador de Idade</h1>
+		</head>
+		<section>
+			<div>
+				<p>
+					<label for="idnasc">Ano nascimento? </label>
+					<input type="number" name="nasc" id="idnasc" min="1901" max="2023">
+				</p>
+				<p>
+					Sexo: 
+					<label for="idmasc">Masc</label>
+					<input type="radio" name="sexo" id="idmasc">
+					<label for="idfem"> Fem</label>
+					<input type="radio" name="sexo" id="idfem" onselect="">
+				</p>
+			</div>
+			<div id="img">
+				<img src="">
+			</div>
+			<input type="button" value="Verificar" onclick="verificar()">
+			<p id="resp">Insira os dados para atualizar!</p>
+		</section>
+		<footer>© Curso em Vídeo</footer>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

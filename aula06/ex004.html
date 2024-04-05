@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+	  
+	  <title>Primeiro teste javascript</title>
+	  
+	<body>
+		<h1>Testando javascript</h1>
+		<script>
+			var nome = window.prompt('Qual é seu nome?')
+			document.write(` Olá ${nome}!<br>`)
+			document.write(`Seu nome tem ${nome.length} letras<br>`)
+			var n1 = 1345.5
+			document.write(`${n1}<br>`)
+			document.write(`${n1.toFixed(2)}<br>`)
+			document.write(`${n1.toFixed(2).replace('.', ',')}<br>`)
+			document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+	  
+	  <title>Condições em Javascript</title>
+	  
+	  <style>
+	  	body{
+	  		font-family: Arial, Verdana, Sans-Serif;
+	  		font-size: 14pt;
+	  	}
+	  	input{
+	  		font-size: 14pt;
+	  		width: 100px;
+	  	}
+	  	input[type = text]{
+	  		width: 150px;
+	  	}
+	  </style>
+	</head>
+	<body>
+		<h1>Selecione sua nacionalidade</h1>
+		<p>
+			<label for="idpais">Em qual país você nasceu?</label>
+		</p>
+		<p>
+			<input type="text" name="pais" id="idpais">
+			<input type="button" value="Verificar" onclick="verificar()">
+		</p>
+		<div>
+			<p>Resposta!</p>
+		</div>
+		<script>
+			function verificar(){
+				var p = document.querySelector('input#idpais').value
+				var res = document.querySelector('div')
+				res.innerHTML = `<p>Você nasceu no(a) ${p}!</p`
+				if (p == 'Brasil'){
+					res.innerHTML += 'Você é brasileiro!'
+				}else{
+					res.innerHTML += 'Você é estrangeiro!'
+				}
+			}
+		</script>
+	</body>
+</html>

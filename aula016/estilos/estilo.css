@@ -1,0 +1,59 @@
+@charset 'UTF-8';
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font: normal 14pt Arial, Verdana, Sans-serif;
+	background-color: lightblue;
+}
+h1{
+	font-size: 1.4em;
+	text-align: center;
+	padding: 10px;
+}
+section{
+	padding: 8px;
+	width: 293px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+}
+input{
+	font-size: 14pt;
+	width: 40px;
+}
+input#botao{
+	width: 95px;
+	margin-left: 3px;
+}
+table{
+	border-collapse: collapse;
+	border-radius: 5px;
+}
+caption{
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid black;
+	border-bottom: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	/*border-radius: 5px 5px 0px 0px;*/
+}
+th{
+	position: sticky;
+	top: 0;
+}
+th, td{
+	padding: 1px;
+	border: 1px solid black;
+}
+tbody > tr:nth-child(odd){
+  			background-color: lightgray;
+footer{
+	color: white;
+	font-style: italic;
+	text-align-last: center;
+	padding: 5px;
+}

@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font: normal 14pt Arial, Verdana, Sans-serif;
+	background-color: lightblue;
+}
+h1{
+	font-size: 1.7em;
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+section{
+	width: 270px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+}
+div{
+	text-align: center;
+}
+input{
+	font-size: 14pt;
+}
+input#idnasc{
+	padding-left: 5px;
+	width: 60px;
+}
+div#img{
+	display: block;
+	margin: auto;
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: blue;
+}
+div > p{
+	padding: 10px;
+}
+section > input{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	width: 90px;
+	padding: 2px;
+}
+section > p{
+	padding: 10px;
+	text-align: center;
+}
+footer{
+	color: white;
+	font-style: italic;
+	text-align-last: center;
+	padding: 5px;
+}

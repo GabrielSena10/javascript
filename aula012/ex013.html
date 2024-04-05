@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+	  
+	  <title>Condição switch em Javascript</title>
+	  
+	  <style>
+	  	body{
+	  		font-family: Arial, Verdana, Sans-Serif;
+	  		font-size: 14pt;
+	  	}
+	  	input{
+	  		font-size: 14pt;
+	  		width: 100px;
+	  	}
+	  </style>
+	</head>
+	<body>
+		<h1>Hora</h1>
+		<p>
+			<input type="button" value="Verificar" onclick="verificar()">
+		</p>
+		<div>
+			<p>Resposta</p>
+		</div>
+		<script>
+			function verificar(){
+				var data = new Date()
+				var dia = data.getDay()
+				var res = document.querySelector('div > p')
+				switch(dia){
+					case(0):
+						res.innerText = 'Domingo'
+						break
+					case(1):
+						res.innerText = 'Segunda'
+						break
+					case(2):
+						res.innerText = 'Terça'
+						break
+					case(3):
+						res.innerText = 'Quarta'
+						break
+					case(4):
+						res.innerText = 'Quinta'
+						break
+					case(5):
+						res.innerText = 'Sexta'
+						break
+					case(6):
+						res.innerText = 'Sábado'
+						break
+					default:
+						res.innerText = 'Error, dia invalido!'
+						break
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport"content="widgt=device-widgt, initial-scale=1.0">
+	  
+	  <title>Analisador de números</title>
+	  
+	  <link rel="stylesheet" href="estilos/estilo.css">
+	</head>
+	<body>
+		<head>
+			<h1>Analisador de números</h1>
+		</head>
+		<section>
+			<div>
+				<p>
+					<label for="idnum">Número(1 a 100): </label>
+					<input type="number" name="num" id="idnum" min="1" max="100">
+					<input type="button" id="botao" value="Adicionar" onclick="adicionar()">
+				</p>
+			</div>
+			<div>
+				<table>
+					<caption>Adicione um Número</caption>
+					<thead>
+						<tr>
+							<th>Números</th>
+							<th>Total</th>
+							<th>Maior</th>
+							<th>Menor</th>
+							<th>Soma</th>
+							<th>Média</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<footer>© Curso em Vídeo</footer>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

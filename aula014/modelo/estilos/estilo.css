@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font: normal 14pt Arial, Verdana, Sans-serif;
+	background-color: lightblue;
+}
+h1{
+	font-size: 2em;
+	text-align: center;
+	padding: 15px;
+}
+section{
+	width: 250px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+}
+p{
+	padding: 10px;
+}
+input{
+	font-size: 15pt;
+	width: 50px;
+}
+input#botao{
+	width: 100px;
+}
+footer{
+	color: white;
+	font-style: italic;
+	text-align-last: center;
+	padding: 5px;
+}

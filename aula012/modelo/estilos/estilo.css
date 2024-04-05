@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font: normal 14pt Arial, Verdana, Sans-serif;
+	background-color: lightblue;
+}
+h1{
+	font-size: 2em;
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+section{
+	width: 250px;
+	height: 250px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+}
+div{
+	text-align: center;
+}
+div#img{
+	display: block;
+	margin: auto;
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+div > p{
+	padding: 15px;
+}
+footer{
+	color: white;
+	font-style: italic;
+	text-align-last: center;
+	padding: 5px;
+}
